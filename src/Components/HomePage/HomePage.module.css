@@ -1,0 +1,14 @@
+.title{
+    text-align: center;
+    color: blue;
+    font-family: 'Boogaloo', cursive;
+    size: 500cm;
+    
+}
+
+.container{
+    display: flex;
+    flex-flow: wrap;
+  
+   
+}

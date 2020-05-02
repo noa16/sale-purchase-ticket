@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route,Switch} from 'react-router-dom'
+import Navbar from './UI/Navbar'
+import Home from './Components/HomePage/Home'
+import Purchase from './Components/PurchasePage/Purchase'
+import Modal from './UI/Modal'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <React.Fragment>
+     <Navbar/>
+     <div>
+       <Switch>
+         <Route exact path='/' component={Home}/>
+         <Route path='/purchase' component={Purchase}/>
+         <Route path='/modal' component={Modal}/>
+
+       </Switch>
+       
+
+     </div>
+  </React.Fragment>
+   
+  
   );
 }
 

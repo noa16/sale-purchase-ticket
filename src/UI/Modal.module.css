@@ -1,0 +1,27 @@
+#modal{
+  
+    
+}
+.modalContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background: rgba(0, 0, 0,0.3);
+    display:flex;
+    justify-content: center;
+    
+    
+}
+.modal_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    width: 400px;
+    border-radius: 1cm;
+    margin: auto;
+    background:rgb(210, 216, 210);
+  }

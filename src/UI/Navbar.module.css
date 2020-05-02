@@ -1,0 +1,78 @@
+.toolbar{
+ 
+  padding: 15px;
+  background-color: #dddddd;
+  position: relative;
+  
+  
+
+}
+
+.home{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:black;
+    border-width: 2px black solid;
+    border:0.05rem solid;
+    border-radius: 0.5rem;
+    background:#429acc;
+    border-color:#ffa400;
+    margin-left: 2px;
+    border-width: 4px;
+    font-style: italic;
+    position: relative;
+    padding-left: 10px;
+    
+
+
+
+
+    
+   
+}
+.Purchase{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:black;
+    padding-left: 10px;
+    border:0.05rem solid;
+    border-radius: 0.5rem;
+    background:#429acc;
+    border-color:#ffa400;
+    border-width: 4px;
+    position: relative;
+    left: 15px;
+    font-style: italic;
+    
+   
+   
+}
+ span{
+     position: relative;
+     font-style: italic;
+     font-size:20px;
+     border:0.05rem solid;
+     border-radius: 0.5rem;
+     background:#429acc;
+     border-color:#ffa400;
+     border-width: 4px;
+     text-transform: capitalize;
+     padding-left: 4px;
+     padding-right: 4px;
+     margin-right: 6px;
+     
+     
+}
+.Purchase:hover,
+.home:hover{
+
+    color:blue
+    
+}
+.container{
+    position: relative;
+    margin-left: 1180px;
+    top:30px;
+    max-width: 2px;
+    
+}
