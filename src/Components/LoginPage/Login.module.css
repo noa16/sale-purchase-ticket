@@ -1,0 +1,32 @@
+.login{
+
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 500px;
+  font-family:inherit;
+  
+  
+}
+div .error{
+    color:red;
+}
+.frame{
+background-color: cornsilk ;
+padding-bottom: 200px;
+padding-top: 20px;
+font-family: 'Boogaloo', cursive;
+
+}
+.loginButton{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 50px;
+}
+.title{
+
+    margin-left: 550px;
+    font-size: 50px;
+}

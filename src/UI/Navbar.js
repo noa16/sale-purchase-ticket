@@ -20,6 +20,10 @@ const Navbar = ()=>{
                 className={classes.Purchase}>
                    My Purchase
                 </Link>
+                <Link to="login"
+                className={classes.login}>
+                    login
+                </Link>
                               
             </div>
             

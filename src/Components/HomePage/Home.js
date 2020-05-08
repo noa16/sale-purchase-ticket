@@ -11,18 +11,23 @@ class Home extends Component{
             <div className={classes.container}>
               <TicketConsumer>
                 {(value)=>{
-                  const {ticketsSale,handlePurchase,isPurchase} = value
+                  const {ticketsSale,handlePurchase,isPurchase,username,password,handlePurchaseSaleId} = value
                   return ticketsSale.map((ticket)=>{
                    
                    return(
                               
                               <TicketList
+                              handlePurchaseSaleId={handlePurchaseSaleId}
                               key={ticket.sale_id}
                               sale_id={ticket.sale_id}
                               isPurchase={isPurchase}
                               handlePurchase={handlePurchase} 
                               description={ticket.description}
-                              price={ticket.price}/>    
+                              price={ticket.price}
+                              username={username}
+                              password={password}
+                            
+                              />    
                    )
                })
                 return(

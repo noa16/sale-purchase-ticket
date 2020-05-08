@@ -43,6 +43,8 @@
     position: relative;
     left: 15px;
     font-style: italic;
+    text-transform: capitalize;
+    height: 10px;
     
    
    
@@ -64,6 +66,7 @@
      
 }
 .Purchase:hover,
+.login:hover,
 .home:hover{
 
     color:blue
@@ -74,5 +77,24 @@
     margin-left: 1180px;
     top:30px;
     max-width: 2px;
+    
+}
+
+.login{
+    position: relative;
+    margin-left: 900px;
+    top: 0px;
+    width: 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-size:1.21rem;
+    color: black;
+    border:0.05rem solid;
+     border-radius: 0.5rem;
+     background:#429acc;
+     border-color:#ffa400;
+     border-width: 4px;
+     padding-top: 0.1px;
+     padding-left: 2px;
     
 }

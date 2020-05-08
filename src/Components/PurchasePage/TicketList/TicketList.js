@@ -16,7 +16,13 @@ import {Link} from 'react-router-dom'
                 <div>description:{props.description}</div>
                 <Link to="/modal">
                   <button 
-                  onClick={()=>props.handlePurchase(props.sale_id)}
+                  onClick={
+                  ()=>{
+                    props.handlePurchaseSaleId(props.sale_id);
+                    props.handlePurchase(props.username,props.password,props.sale_id)
+                   
+
+                   }}
                   disabled={props.isPurchase}>
                     purchase
                   </button>

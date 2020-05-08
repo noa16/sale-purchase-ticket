@@ -1,0 +1,36 @@
+.title{
+    font-family: 'Boogaloo', cursive;
+    margin-left: 600px;
+    color: black;
+}
+.container{
+
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: 25% 25% 25%;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 20px 5px;
+    margin-top: 150px;
+
+
+}
+
+.card{
+    font-family: 'Boogaloo', cursive;
+    border:3px groove rgb(100, 113, 121);
+    width: 150px;
+    height: 200px;
+    background-color:rgb(250, 250, 179);
+   
+    padding: 30px;
+   
+    
+   
+}
+
+
+   
+  
+   
+
+
