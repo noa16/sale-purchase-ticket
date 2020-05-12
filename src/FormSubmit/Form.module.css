@@ -1,0 +1,28 @@
+.formcontrol {
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  margin-left: 20rem;
+  border: none;
+  width: auto;
+  border-radius: var(--radius);
+  text-align: left;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-left: 30px;
+}
+.formcontrol ::placeholder {
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: var(--spacing);
+  margin-left: 35rem;
+}
+.contactform {
+  border: none;
+}
+@media screen and (min-width: 900px) {
+  form {
+    margin-left: 30rem;
+  }
+}

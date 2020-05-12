@@ -1,14 +1,13 @@
-.title{
-    position: relative;
-    background-color: hotpink;
-    font-family: 'Boogaloo', cursive;
-    padding: 6px;
-    margin: 2px;
-    
-    
-   
+.title {
+  position: relative;
+  background-color: var(--clr-grey-1);
+  font-family: "Boogaloo", cursive;
+  padding: 6px;
+  margin: 2px;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  border-radius: var(--radius);
 }
-.container{
-    position: relative;
+.container {
+  position: relative;
 }
-

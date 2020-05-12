@@ -1,14 +1,108 @@
-.title{
-    text-align: center;
-    color: blue;
-    font-family: 'Boogaloo', cursive;
-    size: 500cm;
-    
+h3 {
+  text-align: center;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
 }
 
-.container{
-    display: flex;
-    flex-flow: wrap;
-  
-   
+.title {
+  color: var(--clr-grey-1);
+  font-family: var(--ff-primary);
+  font-size: 100px;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  line-height: 2;
+  position: absolute;
+  margin-left: 270px;
+  animation: slideFromRight 5s ease-in-out 1;
+}
+
+.footer {
+  background: var(--clr-grey-10);
+  margin-bottom: 2px;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  background: url("../../images/ticket.jpg") center/cover no-repeat fixed;
+}
+.image {
+  position: relative;
+  margin-bottom: -30px;
+  margin-left: 130px;
+}
+
+.contentdivider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-grey-1),
+    #e9b949,
+    var(--clr-grey-1)
+  );
+}
+
+.tickets {
+  /*float: left;*/
+}
+
+.info {
+  position: relative;
+  float: left;
+  padding: 3.5rem;
+  margin-left: 20px;
+  font-family: var(--ff-secondary);
+  text-transform: lowercase;
+  border-radius: var(--radius);
+  width: 310px;
+  margin: auto;
+  margin-top: 15px;
+  background: var(--clr-grey-10);
+  min-height: 20rem;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.info:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border-bottom: 0.2rem solid #678e3e;
+  background: var(--clr-white);
+}
+.info:hover .image {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
