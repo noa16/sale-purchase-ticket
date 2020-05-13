@@ -4,6 +4,9 @@ import TicketList from "../PurchasePage/TicketList/TicketList";
 import classes from "./HomePage.module.css";
 import contact from "../../images/communications.png";
 import Form from "../../FormSubmit/Form";
+import facebook from "../../images/facebook.png";
+import whatsapp from "../../images/whatsapp.png";
+import twitter from "../../images/twitter.png";
 
 class Home extends Component {
   render() {
@@ -79,10 +82,19 @@ class Home extends Component {
             }}
           </TicketConsumer>
         </div>
-        <footer className={classes.footer}>
-          <h3>submit</h3>
+        <section className={classes.footer}>
+          <h3 className={classes.contactTitle}>contact</h3>
+          <p className={classes.contactpah}>
+            you can contact with us in any trouble on facebook instgram{" "}
+          </p>
+          <article className={classes.socialMedia}>
+            <img className={classes.imgIcon} src={facebook} />
+            <img className={classes.imgIcon} src={whatsapp} />
+            <img className={classes.imgIcon} src={twitter} />
+          </article>
           <Form />
-        </footer>
+        </section>
+        <footer></footer>
       </React.Fragment>
     );
   }

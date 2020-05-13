@@ -1,28 +1,56 @@
 .formcontrol {
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
-  margin-left: 20rem;
+  margin-left: 10rem;
   border: none;
-  width: auto;
+  width: 15rem;
   border-radius: var(--radius);
   text-align: left;
   box-sizing: border-box;
   padding: 5px;
   padding-left: 30px;
+  margin-bottom: -2px;
 }
+
 .formcontrol ::placeholder {
   text-transform: uppercase;
   position: relative;
   letter-spacing: var(--spacing);
   margin-left: 35rem;
+  margin-top: 3px;
 }
 .contactform {
   border: none;
+  position: relative;
+  max-width: 35rem;
+  padding-top: 5rem;
 }
-@media screen and (min-width: 900px) {
-  form {
-    margin-left: 30rem;
+
+.submitbtn {
+  background-color: var(--clr-green);
+  position: relative;
+  text-decoration: none;
+  margin-left: 160px;
+  margin-top: 60px;
+  border: 3px solid var(--clr-green);
+  border-radius: var(--radius);
+  font-family: var(--ff-primary);
+  border-radius: 3px;
+  width: 15rem;
+}
+.submitbtn:hover {
+  transition: var(--transition);
+  color: var(--clr-primary-light);
+  font-family: var(--ff-primary);
+}
+
+@media screen and (max-width: 400px) {
+  .formcontrol {
+    margin-left: -20px;
+  }
+  .submitbtn {
+    margin-left: -1px;
   }
 }

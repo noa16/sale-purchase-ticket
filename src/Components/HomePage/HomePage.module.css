@@ -16,9 +16,29 @@ h3 {
   animation: slideFromRight 5s ease-in-out 1;
 }
 
+.contactTitle {
+  position: absolute;
+  right: 20rem;
+}
+.contactpah {
+  position: absolute;
+  right: 10rem;
+  margin-top: 5rem;
+  width: 20rem;
+}
+.socialMedia {
+  position: absolute;
+  right: 10rem;
+  margin-top: 15rem;
+  width: 20rem;
+}
+.imgIcon {
+  padding: 30px;
+}
+
 .footer {
   background: var(--clr-grey-10);
-  margin-bottom: 2px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -45,10 +65,6 @@ header {
     #e9b949,
     var(--clr-grey-1)
   );
-}
-
-.tickets {
-  /*float: left;*/
 }
 
 .info {
@@ -85,6 +101,12 @@ header {
   .title {
     font-size: 5rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contactpah {
+    width: 10px;
+    left: 26rem;
   }
 }
 

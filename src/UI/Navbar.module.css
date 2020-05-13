@@ -66,13 +66,14 @@
 }
 
 .login {
-  position: relative;
+  display: inline-block;
   margin-left: 900px;
+  font-size: var(--size);
+  padding-left: 5px;
+  padding-right: 5px;
   top: 0px;
-  width: 20px;
   text-decoration: none;
   font-style: italic;
-  font-size: 1.21rem;
   color: black;
   border: 0.05rem solid;
   border-radius: 0.5rem;
@@ -80,7 +81,6 @@
   border-color: #ffa400;
   border-width: 4px;
   padding-top: 0.1px;
-  padding-left: 2px;
 }
 
 @media screen and (min-width: 500px) {

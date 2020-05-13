@@ -12,6 +12,7 @@ const TicketList = (props) => {
       <div>description:{props.description}</div>
       <Link to="/modal">
         <button
+          className={classes.purchasebtn}
           onClick={() => {
             props.handlePurchaseSaleId(props.sale_id);
             props.handlePurchase(props.username, props.password, props.sale_id);

@@ -12,4 +12,5 @@
   --clr-grey-5: #617d98;
   --clr-green: #678e3e;
   --clr-primary-light: #beed8c;
+  --transition: all 0.3s linear;
 }

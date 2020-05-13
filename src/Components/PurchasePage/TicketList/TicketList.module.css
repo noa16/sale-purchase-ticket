@@ -12,7 +12,7 @@
   transform: scale(1.1);
 }
 
-button {
+.purchasebtn {
   background-color: var(--clr-primary-light);
   position: relative;
   text-decoration: none;
