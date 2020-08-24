@@ -15,10 +15,11 @@ class TicketProvider extends Component {
   };
 
   handleSale = async (email, description, price) => {
+    //if user want to sale ticket
     console.log("handle saleeee");
     console.log(description);
     try {
-      var max_id;
+      var max_id; //need to find the max id to enter new ticket with uniqe id(find the max id and increment it in 1)
       const maxResponse = await fetch("http://localhost:5000/max");
       const jsonData = await maxResponse.json();
       var max = await JSON.parse(JSON.stringify(jsonData));
@@ -35,6 +36,7 @@ class TicketProvider extends Component {
     }
   };
   handlePurchaseSaleId = async (ticketId) => {
+    //change the status of a ticket from sale to purchased by his id
     this.setState({ isPurchase: true });
     try {
       await fetch(`http://localhost:5000/purchase/${ticketId}`, {
@@ -48,6 +50,7 @@ class TicketProvider extends Component {
   };
 
   handlePurchase = async (username, password, ticketId) => {
+    //add the ticket that user purchased
     try {
       const response = await fetch("http://localhost:5000/purchase", {
         method: "POST",
@@ -61,6 +64,7 @@ class TicketProvider extends Component {
     }
   };
   getPurchase = async (username, sale_id) => {
+    //get ticket for a specific user (by his id)
     var arr = [];
     const response = await fetch(`http://localhost:5000/purchase/${username}`);
     const jsonData = await response.json();
@@ -108,6 +112,7 @@ class TicketProvider extends Component {
   };
 
   async componentDidMount() {
+    //show all the ticket that user can purchase after first render
     try {
       const response = await fetch("http://localhost:5000/sale");
       const jsonData = await response.json();

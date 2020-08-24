@@ -80,6 +80,10 @@ header {
   margin-top: 15px;
   background: var(--clr-grey-10);
   min-height: 20rem;
+  margin-right: 10px;
+}
+.clearfix {
+  margin-left: 3rem;
 }
 
 .clearfix::after,

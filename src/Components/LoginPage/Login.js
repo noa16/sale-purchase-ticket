@@ -4,8 +4,8 @@ import { TicketConsumer, TicketProvider } from "../../TicketProvider";
 import { Link } from "react-router-dom";
 
 const Login = () => {
-  const [userName, setUsername] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [userName, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <React.Fragment>
@@ -31,23 +31,10 @@ const Login = () => {
                   className={classes.pass}
                   onChange={(event) => setPassword(event.target.value)}
                 />
-                {isValidUserPass === false ? (
+                {password.length < 4 ? (
                   <div className={classes.error}>
-                    username or password is incorrect
-                    <button
-                      className={classes.loginButton}
-                      onClick={() => handleLogin(userName, password)}
-                    >
-                      login
-                    </button>
+                    password is incorrect must include 4 digit
                   </div>
-                ) : isValidUserPass === null ? (
-                  <button
-                    className={classes.loginButton}
-                    onClick={() => handleLogin(userName, password)}
-                  >
-                    login
-                  </button>
                 ) : (
                   <Link to="/">
                     <button
